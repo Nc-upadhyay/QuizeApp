@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Quiz App"
+        android:textSize="30sp"
+       />
+
+    <RelativeLayout
+        android:id="@+id/replace_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/title"
+
+        >
+
+        <TextView
+            android:id="@+id/hedding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textColor="#D50000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            android:layout_below="@+id/hedding"
+            android:text="1. There are 5 MCQ in this quiz. "
+            />
+
+        <TextView
+            android:id="@+id/para2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/para"
+
+            android:text="2. There are 20sec. to answer a \n     question. "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/para3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+            android:layout_below="@+id/para2"
+            android:text="3. Each question have 4 option. "
+            />
+
+        <TextView
+            android:id="@+id/para4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/para3"
+
+            android:text="4. You can't come back to previous \n     question "
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/bk1"
+        android:text="Start Quiz"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
