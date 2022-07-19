@@ -5,9 +5,9 @@ name: CI
 on:
  
   push:
-    branches: [ "CICDNAVEEN" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "CICDNAVEEN" ]
+    branches: [ "master" ]
 
 
   workflow_dispatch:
